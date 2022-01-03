@@ -1,2 +1,0 @@
-# GoF-TS
-# GoF-TS

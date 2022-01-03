@@ -4,7 +4,8 @@ import Db from "../model/Db";
 export default class Payment {
 
     pay(productID: string): void {
-        const dbProduct = DbProductFactory.create(Db.MYSQL);
+        const db = Db.MONGODB
+        const dbProduct = DbProductFactory.create(db);
         const product = dbProduct.getProductById(productID);
         console.log(product);
     }
